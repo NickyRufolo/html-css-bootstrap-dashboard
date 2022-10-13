@@ -4,7 +4,7 @@ background-color: #0A1e34;
 
 header {
 height: 70px;
-background-color: lightblue;
+/* background-color: lightblue; */
 }
 main {
     height: calc(100vh - 70px);
