@@ -1,15 +1,22 @@
-header {
-height: 70px;
-background-color: aqua;
+.bg-dark-custom {
+background-color: #0A1e34;
 }
 
-.Admin {
-background-color: yellow;
+header {
+height: 70px;
+background-color: lightblue;
+}
+main {
+    height: calc(100vh - 70px);
+    background-color: lightcoral;
 }
 
 .list {
     background-color: green;
 }
-.list-top {
-background-color: goldenrod;
+#side {
+background-image: url(/assets/img/sidebar-bg.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
 }
