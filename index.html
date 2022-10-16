@@ -112,16 +112,78 @@
                                 <div class="col-12 col-lg-8">
                                 <!-- Card-1 -->
                                 <div class="card">
-                                    <div class="card-header">
-                                    Next Classes
-                                    </div>
+                                    <div class="card-header d-flex justify-content-between">
+                                        <h2>Next Classes</h2>
+                                <!-- offcanvas -->
+                                        <button class="btn btn-outline-  primary" type="button" 
+                                            data-bs-toggle="offcanvas" 
+                                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            +
+                                        </button>                                
+                                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" 
+                                            aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Formt</h5>
+                                                <!-- button close -->
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </form>
+                                        </div>
+                                        <!-- offcanvas content  -->
+                                        <div class="offcanvas-body">
+                                            <form class="row g-3">
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputAddress" class="form-label">Address</label>
+                                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputAddress2" class="form-label">Address 2</label>
+                                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputCity" class="form-label">City</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="inputState" class="form-label">State</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputZip" class="form-label">Zip</label>
+                                                    <input type="text" class="form-control" id="inputZip">
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Check me out
+                                                    </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                                </div>
+                                            </form>                                        </div>
+                                        </div>
+                                </div>
+
                                     <div class="card-body">
                                     <!-- Div Table responsive Bootstrap con dentro Table Bootstrap -->
                                     <div class="table-responsive">
-                                        <table class="table">
+                                        <table class="table align-middle">
                                             <thead>
                                                 <tr>
-                                                <th scope="col">Name</th>
+                                                <th scope="col" class="w-50">Name</th>
                                                 <th scope="col">Date</th>
                                                 <th scope="col">ROI</th>
                                                 <th scope="col">State</th>
@@ -130,7 +192,11 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                <th scope="row">Class 77</th>                                                <td>15 Feb 2022</td>
+                                                <th scope="row">
+                                                    <img src="./assets/img/class-avatar.jpg"
+                                                    class="class-img"
+                                                    alt=""> Class 77</th>                             
+                                                    <td>15 Feb 2022</td>
                                                 <td>20%</td>
                                                 <td><span class="badge text-bg-success">Done</span>
                                                 </td>
@@ -146,14 +212,140 @@
                                                 </tr>
 
                                                 <tr>
-                                                <th scope="row">Class 78
-                                                </th>
-                                                <td>13 Mar 2022</td>
-                                                <td>27%</td>
-                                                <td><span class="badge text-bg-success">Done</span>
-                                                <td>@Done</td>
-                                                </tr>
- 
+                                                    <th scope="row">                                                    
+                                                        <img src="./assets/img/class-avatar.jpg"
+                                                    class="class-img"
+                                                    alt="">  Class 78
+                                                    </th>
+                                                    <td>13 Mar 2022</td>
+                                                    <td>27%</td>
+                                                    <td><span class="badge text-bg-success">Done</span>
+                                                        <td>
+                                                            <button type="button" class="btn btn-outline-secondary">
+                                                                <i class="fa-solid fa-pencil"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-secondary">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                            </button>
+                                                        </td>                                                
+                                                    </tr>                                                
+                                                <tr>
+                                                    <tr>
+                                                        <th scope="row">                                                    
+                                                            <img src="./assets/img/class-avatar.jpg"
+                                                        class="class-img"
+                                                        alt="">  Class 79
+                                                        </th>
+                                                        <td>13 Oct 2022</td>
+                                                        <td>50%</td>
+                                                        <td><span class="badge text-bg-success">Done</span>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary">
+                                                                    <i class="fa-solid fa-pencil"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary">
+                                                                    <i class="fa-solid fa-trash"></i>
+                                                                </button>
+                                                            </td>                                                
+                                                        </tr>                                                
+                                                    <tr>
+                                                        <tr>
+                                                            <th scope="row">                                                    
+                                                                <img src="./assets/img/class-avatar.jpg"
+                                                            class="class-img"
+                                                            alt="">  Class 70
+                                                            </th>
+                                                            <td>22 Mar 2022</td>
+                                                            <td>97%</td>
+                                                            <td><span class="badge text-bg-warning">Process</span>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-secondary">
+                                                                        <i class="fa-solid fa-pencil"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-outline-secondary">
+                                                                        <i class="fa-solid fa-trash"></i>
+                                                                    </button>
+                                                                </td>                                                
+                                                            </tr>                                                
+                                                        <tr>
+                                                            <tr>
+                                                                <th scope="row">                                                    
+                                                                    <img src="./assets/img/class-avatar.jpg"
+                                                                class="class-img"
+                                                                alt="">  Class 81
+                                                                </th>
+                                                                <td>13 Apr 2022</td>
+                                                                <td>37%</td>
+                                                                <td><span class="badge text-bg-success">Done</span>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                            <i class="fa-solid fa-pencil"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                            <i class="fa-solid fa-trash"></i>
+                                                                        </button>
+                                                                    </td>                                                
+                                                                </tr>                                                
+                                                            <tr>
+                                                                <tr>
+                                                                    <th scope="row">                                                    
+                                                                        <img src="./assets/img/class-avatar.jpg"
+                                                                    class="class-img"
+                                                                    alt="">  Class 82
+                                                                    </th>
+                                                                    <td>13 Mar 2022</td>
+                                                                    <td>27%</td>
+                                                                    <td><span class="badge text-bg-danger">Failed</span>
+                                                                        <td>
+                                                                            <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-pencil"></i>
+                                                                            </button>
+                                                                            <button type="button" class="btn btn-outline-secondary">
+                                                                                <i class="fa-solid fa-trash"></i>
+                                                                            </button>
+                                                                        </td>                                                
+                                                                    </tr>                                                
+                                                                <tr>
+                                                                    <tr>
+                                                                        <th scope="row">                                                     
+                                                                            <img src="./assets/img/class-avatar.jpg"
+                                                                        class="class-img"
+                                                                        alt="">  Class 83
+                                                                        </th>
+                                                                        <td>23 Nov 2022</td>
+                                                                        <td>63%</td>
+                                                                        <td><span class="badge text-bg-success">Done</span>
+                                                                            <td>
+                                                                                <button type="button" class="btn btn-outline-secondary">
+                                                                                    <i class="fa-solid fa-pencil"></i>
+                                                                                </button>
+                                                                                <button type="button" class="btn btn-outline-secondary">
+                                                                                    <i class="fa-solid fa-trash"></i>
+                                                                                </button>
+                                                                            </td>                                                
+                                                                        </tr>                                                
+                                                                    <tr>
+                                                                        <tr>
+                                                                            <th scope="row">                                                    
+                                                                                <img src="./assets/img/class-avatar.jpg"
+                                                                            class="class-img"
+                                                                            alt="">  Class 84
+                                                                            </th>
+                                                                            <td>11 Mar 2022</td>
+                                                                            <td>7%</td>
+                                                                            <td><span class="badge text-bg-warning">Process</span>
+                                                                                <td>
+                                                                                    <button type="button" class="btn btn-outline-secondary">
+                                                                                        <i class="fa-solid fa-pencil"></i>
+                                                                                    </button>
+                                                                                    <button type="button" class="btn btn-outline-secondary">
+                                                                                        <i class="fa-solid fa-trash"></i>
+                                                                                    </button>
+                                                                                </td>                                                
+                                                                            </tr>                                                
+                                                                        <tr>
+                                                                        
+
                                             
                                         </table>
                                     </div>
