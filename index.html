@@ -51,9 +51,9 @@
 
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
-                        <li><button class="dropdown-item" type="button">Action</button></li>
-                        <li><button class="dropdown-item" type="button">Another action</button></li>
-                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            <li><button class="dropdown-item" type="button">Action</button></li>
+                            <li><button class="dropdown-item" type="button">Another action</button></li>
+                            <li><button class="dropdown-item" type="button">Something else here</button></li>
                         </ul>
                     </div>
                     <!-- End Ring -->
@@ -67,18 +67,104 @@
         <main class="container-fluid">
             <div class="row h-100">
                 <!-- Sidebar-->
-                <div class="col-2 bg-dark-custom" id="side">
-                    sidebar
+                <div class="col-2 bg-dark-custom text-white d-flex align-items-center flex-column justify-content-between" id="side">
+                    <ul class="list-unstyled py-2">
+                        <li><i class="fa-solid fa-house py-2"></i><span>  Home</span></li>
+                        <li><i class="fa-solid fa-signal py-2"></i><span>  Signal</span></li>
+                        <li><i class="fa-solid fa-traffic-light py-2"></i><span>  Stats</span></li>
+                    </ul>
+                    <ul class="ps-0 list-unstyled">
+                        <li><i class="fa-solid fa-gear"></i>Admin</li>
+                    </ul>
                 </div>
-                <!-- Content -->
+            <!-- Content -->
                 <div class="col-10 px-0">
                     <!-- Content area blue -->
                     <div class="container-fluid bg-primary text-white py-4">
                         <div class="row">
-                            <div class="col-lg-8">Boolean</div>
-                            <div class="col-lg-4">Studenti online neglli ultimi 30 minuti</div>
+                            <div class="col-lg-8">
+                                <h3 class="d-inline-block">Boolean</h3> 
+                                <span class="badge rounded-pill">  Blaze</span>
+                    <!-- Breadcrumbs or normal divs -->
+                                <nav style="--bs-breadcrumb-divider: '>>'; " 
+                                    aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <span class="badge rounded-pill">Home</span>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        <span class="badge rounded-pill d-lg-none ">+</span>
+                                        <span class="badge rounded-pill d-none d-lg-inline-block">Mobile</span>
+                                        <span class="badge rounded-pill d-none d-lg-inline-block">Courses</span>
+                                        <span class="badge rounded-pill d-none d-lg-inline-block">App</span>
+                                    </li>
+                                    </ol>
+                                </nav>
+                            </div> 
+                            <div class="col-lg-4">Studenti online negli ultimi 30 minuti
+                            </div>
                         </div>
                     </div>
+                        <!-- Card columns --> 
+                        <!-- (col-12 posso anche non usarle) -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-lg-8">
+                                <!-- Card-1 -->
+                                <div class="card">
+                                    <div class="card-header">
+                                    Next Classes
+                                    </div>
+                                    <div class="card-body">
+                                    <!-- Div Table responsive Bootstrap con dentro Table Bootstrap -->
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">ROI</th>
+                                                <th scope="col">State</th>
+                                                <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <th scope="row">Class 77</th>                                                <td>15 Feb 2022</td>
+                                                <td>20%</td>
+                                                <td><span class="badge text-bg-success">Done</span>
+                                                </td>
+                                                <!-- outilne booton (icon) -->
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-secondary">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                                </tr>
+
+                                                <tr>
+                                                <th scope="row">Class 78
+                                                </th>
+                                                <td>13 Mar 2022</td>
+                                                <td>27%</td>
+                                                <td><span class="badge text-bg-success">Done</span>
+                                                <td>@Done</td>
+                                                </tr>
+ 
+                                            
+                                        </table>
+                                    </div>
+                                    <!-- End Table -->
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-12 col-lg-4">b</div>
+                            </div>
+
+                        </div>
                 </div>
             </div>
         </main>
